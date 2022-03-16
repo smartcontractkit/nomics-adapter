@@ -43,7 +43,8 @@ const createRequest = (input, callback) => {
   const queryObj = {
     ids: coin,
     convert: market,
-    key: process.env.API_KEY
+    key: process.env.API_KEY,
+    "per-page": 1000
   }
 
   const options = {
